@@ -4,7 +4,8 @@
   "description": "This is a sample project",
   "main": "src/main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,13 @@
     "url": "https://github.com/GerritPlehn/project-template/issues"
   },
   "homepage": "https://github.com/GerritPlehn/project-template#readme",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.4.1"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
