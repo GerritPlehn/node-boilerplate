@@ -32,7 +32,10 @@
     "lint-staged": "^11.1.2",
     "prettier": "2.4.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "winston": "^3.3.3",
+    "winston-transport-sentry-node": "^2.0.0"
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   }
